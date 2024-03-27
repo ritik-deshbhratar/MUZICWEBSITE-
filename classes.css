@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  body{
+   
+    scroll-behavior: smooth;
+  }
+  html{
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  .nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(7, 30, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h3{
+    color: #fff;
+    margin-left: 40px;
+    font-size: 23px;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    border-radius: 7px;
+  }
+  ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: 20px;
+  }
+  ul li a{
+    text-decoration: none;
+    color:#fff;
+  }
+  ul li a{
+    cursor: pointer;
+  }
+  ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .main-menu{
+    margin-right: 30px;
+  }
+  .closeBtn, .menuBtn{
+    font-size: 28px;
+    margin: 0px 20px;
+    display: none;
+    color:#fff;
+    
+  }
+  .class_head{
+    margin-top: 10px;
+    background-color: darkorange;
+    color: #fff;
+    text-align: center;
+    padding:20px;
+  }
+  #group{
+    width:80%;
+    height:80%;
+    padding: 10px;
+    margin-top: 10px;
+    transition: transform .2s ease-in-out;
+  
+  }
+  #group:hover{
+    transform: scale(1.1);
+  }
+  #instrument{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40%;
+    width: 20%;
+  }
+ 
+ 
+  /*...................Media Query..............*/
+  @media only screen and (max-width:600px) {
+    body{
+      scroll-behavior:smooth ;
+    }
+    ul{
+      display:none;
+      z-index: -1;
+      }
+    ul li {
+      display: block;
+      margin: 20px;
+      z-index: -1;
+    }
+    ul li a{
+      color:#fff;
+      text-decoration: none;
+    }
+    .menuBtn{
+      display: block;
+      z-index: -1;
+    }
+    #menu{
+      width: 100%;
+      background: rgb(11, 46, 54);
+      position:absolute;
+      top:60px;
+      right: 0;
+      text-align: left;
+      z-index: 1;
+    }
+    #group{
+  
+      width:30%;
+      height:80%;
+      padding: 10px;
+      margin-left: 30%;
+      margin-top: 10px;
+      transition: transform .2s ease-in-out;
+    
+    }
+  }
+
+    

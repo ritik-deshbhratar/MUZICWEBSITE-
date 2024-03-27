@@ -1,0 +1,142 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all ease-in-out;
+}
+body{
+  background-color:#9bff;
+  scroll-behavior: smooth;
+  
+}
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+.nav-bar{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(7, 30, 35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h3{
+  color: #fff;
+  margin-left: 40px;
+  font-size: 23px;
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  border-radius: 7px;
+  
+  
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 20px;
+}
+ul li a{
+  text-decoration: none;
+  color:#fff;
+}
+ul li a{
+  cursor: pointer;
+}
+ul li a:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  
+}
+.main-menu{
+  margin-right: 30px;
+}
+.closeBtn, .menuBtn{
+  font-size: 28px;
+  margin: 0px 20px;
+  display: none;
+  color:#fff;
+  
+}
+form{
+  border:2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.form:hover{
+  box-shadow: 5px 5px 5px 5px red;
+}
+.btn{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.wood{
+  width: 100%;
+  filter:contrast(4);
+}
+.reg_img{
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+#address{
+  background-color:rgb(22,33,83);
+  margin-top: 140px;
+  padding: 25px;
+  box-shadow: 5px 5px 5px 5px  #FF474C ;
+}
+
+.whatsapp, .insta, .face{
+  font-size:56px;
+  color:white;
+  letter-spacing: ;
+  
+}
+.whatsapp:hover{
+  color: green;
+}
+.insta:hover{
+  color:#ff474c;
+}
+.face:hover{
+  color: blue;
+}
+
+/*...................Media Query..............*/
+@media only screen and (max-width:600px) {
+  body{
+   scroll-behavior: smooth; 
+  }
+  ul{
+    display:none;
+    z-index: -1;
+    }
+  ul li {
+    display: block;
+    margin: 20px;
+    z-index: -1;
+  }
+  ul li a{
+    color:#fff;
+    text-decoration: none;
+  }
+  .menuBtn{
+    display: block;
+    z-index: -1;
+    color: #fff;
+  }
+  #menu{
+    width: 100%;
+    background: rgb(11, 46, 54);
+    position:absolute;
+    top:60px;
+    right: 0;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  
+}

@@ -1,0 +1,166 @@
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(data/src/musician.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: auto;
+
+    
+}
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+.nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(7, 30, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+  }
+  h3{
+    color: #fff;
+    margin-left: 40px;
+    font-size: 23px;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    border-radius: 7px;
+  }
+  ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: 20px;
+  }
+  ul li a{
+    text-decoration: none;
+    color:#fff;
+  }
+  ul li a{
+    cursor: pointer;
+  }
+  ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .main-menu{
+    margin-right: 30px;
+  }
+  .closeBtn, .menuBtn{
+    font-size: 28px;
+    margin: 0px 20px;
+    display: none;
+    color:#fff;
+    
+  }
+
+form{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    margin: auto;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.btn{
+    color:#fff;
+    padding:10px;
+   
+    font-weight: 600;
+    background-color: #4bff;
+    margin-top: 20px;
+    text-align: center;
+}
+.btn:hover{
+    background-color: aquamarine;
+    color: #000;
+
+}
+p{
+    text-align: center;
+    color:#fff;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-family:'Times New Roman', Times, serif;
+}
+@media only screen and (max-width:600px) {
+    body{
+     scroll-behavior: smooth; 
+    }
+    ul{
+      display:none;
+      z-index: 1;
+      }
+    ul li {
+      display: block;
+      margin: 20px;
+      z-index: 1;
+    }
+    ul li a{
+      color:#fff;
+      text-decoration: none;
+    }
+    .menuBtn{
+      display: block;
+      z-index: -1;
+      color: #fff;
+    }
+    #menu{
+      width: 100%;
+      background: rgb(11, 46, 54);
+      position:absolute;
+      top:60px;
+      right: 0;
+      text-align: left;
+      z-index: 1;
+    }
+}
